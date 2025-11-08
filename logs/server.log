@@ -1,0 +1,29 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 258 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.9.126:3000/
+7:30:29 AM [vite] Pre-transform error: Failed to resolve import "locomotive-scroll/dist/locomotive-scroll.css" from "src/App.jsx". Does the file exist?
+7:30:46 AM [vite] Internal server error: Failed to resolve import "locomotive-scroll/dist/locomotive-scroll.css" from "src/App.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/workspace/src/App.jsx:7:7
+  6  |  import Projects from "./components/Projects";
+  7  |  import Contact from "./components/Contact";
+  8  |  import "locomotive-scroll/dist/locomotive-scroll.css";
+     |          ^
+  9  |  export default function App() {
+  10 |    useEffect(() => {
+      at TransformPluginContext._formatError (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+      at TransformPluginContext.error (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+      at normalizeUrl (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64306:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64438:39
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64365:7)
+      at async PluginContainer.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+      at async loadAndTransform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+      at async viteTransformMiddleware (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
